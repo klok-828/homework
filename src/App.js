@@ -17,21 +17,6 @@ function App() {
     setLoading(false);
   };
 
-  const rewards = (total) => {
-    let points = 0;
-    let amt = total;
-    let above100 = amt - 100;
-
-    if(above100 > 0) {
-      points += (above100 * 2);
-    }
-
-    if(amt > 50) {
-      points += 50;
-    }
-
-    return points;
-  }
 
   useEffect(() => {
 
